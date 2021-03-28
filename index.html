@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XElectrum</title>
+    <style>
+        body {
+            background-color: #000000f8;
+            color: whitesmoke;
+            background-image: url("bg.jpg");
+            background-size: 100%;
+            background-position: center center;
+            background-blend-mode: overlay;
+        }
+
+        .title {
+            text-align: center;
+            color: #ff8800;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 20px;
+            width: 15vw;
+            margin: 2vw 15vw;
+        }
+
+        button {
+            border: none;
+            background-color: #ff8800;
+            color: whitesmoke;
+            padding: 1vw 2vw;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        input {
+            background-color: #3333333d;
+            color: whitesmoke;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        td * {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            margin-bottom: 20px;
+        }
+
+        li {
+            list-style: none;
+            color: #ff8800;
+            font-weight: bold;
+        }
+
+        li span {
+            color: whitesmoke;
+        }
+
+        *:focus {
+            outline: 0px none transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">XElectrum</h1>
+    <div class="row">
+
+        <div class="col">
+            <ul>
+                <li>Address: <span id="address">***</span></li>
+                <li>Balance: <span id="balance">***</span></li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <h4>Create Wallet</h4>
+            <button>Click</button>
+        </div>
+
+        <div class="col">
+            <h4>Get Balance</h4>
+            <button>Click</button>
+        </div>
+
+        <div class="col">
+            <h4>Send Bitcoin</h4>
+            <table>
+                <tr>
+                    <td>
+                        <label>Address</label>
+                    </td>
+                    <td>
+                        <input name="address_input" id="address_input">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Amount</label>
+                    </td>
+                    <td>
+                        <input type="number" value="1" name="amount_input" id="amount_input">
+                    </td>
+                </tr>
+            </table>
+            <button>Click</button>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+
+
+        axios.defaults.BaseURL = ""
+
+        const create_wallet = () => {
+
+        }
+
+        const get_balance = () => {
+
+        }
+
+        const send_btc = () => {
+
+        }
+
+
+    </script>
+</body>
+
+</html>
